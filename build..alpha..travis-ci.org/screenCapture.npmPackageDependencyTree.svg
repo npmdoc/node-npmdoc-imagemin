@@ -1,0 +1,33 @@
+<svg height="478" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="478" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">1 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ imagemin@5.2.2 </tspan>
+<tspan x="10" y="90">  ├── file-type@3.9.0 </tspan>
+<tspan x="10" y="106">  ├─┬ globby@5.0.0 </tspan>
+<tspan x="10" y="122">  │ ├─┬ array-union@1.0.2 </tspan>
+<tspan x="10" y="138">  │ │ └── array-uniq@1.0.3 </tspan>
+<tspan x="10" y="154">  │ ├── arrify@1.0.1 </tspan>
+<tspan x="10" y="170">  │ ├─┬ glob@7.1.1 </tspan>
+<tspan x="10" y="186">  │ │ ├── fs.realpath@1.0.0 </tspan>
+<tspan x="10" y="202">  │ │ ├─┬ inflight@1.0.6 </tspan>
+<tspan x="10" y="218">  │ │ │ └── wrappy@1.0.2 </tspan>
+<tspan x="10" y="234">  │ │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="250">  │ │ ├─┬ minimatch@3.0.3 </tspan>
+<tspan x="10" y="266">  │ │ │ └─┬ brace-expansion@1.1.7 </tspan>
+<tspan x="10" y="282">  │ │ │   ├── balanced-match@0.4.2 </tspan>
+<tspan x="10" y="298">  │ │ │   └── concat-map@0.0.1 </tspan>
+<tspan x="10" y="314">  │ │ ├── once@1.4.0 </tspan>
+<tspan x="10" y="330">  │ │ └── path-is-absolute@1.0.1 </tspan>
+<tspan x="10" y="346">  │ ├── object-assign@4.1.1 </tspan>
+<tspan x="10" y="362">  │ └─┬ pinkie-promise@2.0.1 </tspan>
+<tspan x="10" y="378">  │   └── pinkie@2.0.4 </tspan>
+<tspan x="10" y="394">  ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="410">  │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="426">  ├── pify@2.3.0 </tspan>
+<tspan x="10" y="442">  ├── promise.pipe@3.0.0 </tspan>
+<tspan x="10" y="458">  └── replace-ext@0.0.1</tspan>
+</text>
+</svg>
