@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.imagemin.imagemin">
+            function <span class="apidocSignatureSpan"></span>imagemin
+            <span class="apidocSignatureSpan">(input, output, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.imagemin.buffer">
             function <span class="apidocSignatureSpan">imagemin.</span>buffer
             <span class="apidocSignatureSpan">(input, opts)</span>
@@ -69,6 +78,33 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.imagemin" id="apidoc.module.imagemin">module imagemin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.imagemin.imagemin" id="apidoc.element.imagemin.imagemin">
+        function <span class="apidocSignatureSpan"></span>imagemin
+        <span class="apidocSignatureSpan">(input, output, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(input, output, opts) =&gt; {
+	if (!Array.isArray(input)) {
+		return Promise.reject(new TypeError('Expected an array'));
+	}
+
+	if (typeof output === 'object') {
+		opts = output;
+		output = null;
+	}
+
+	opts = Object.assign({plugins: []}, opts);
+	opts.plugins = opts.use || opts.plugins;
+
+	return globby(input, {nodir: true}).then(paths =&gt; Promise.all(paths.map(x =&gt; handleFile(x, output, opts))));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
