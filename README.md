@@ -1,9 +1,14 @@
-# api documentation for  [imagemin (v5.2.2)](https://github.com/imagemin/imagemin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-imagemin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-imagemin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-imagemin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-imagemin)
+# npmdoc-imagemin
+
+#### api documentation for  [imagemin (v5.2.2)](https://github.com/imagemin/imagemin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-imagemin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-imagemin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-imagemin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-imagemin)
+
 #### Minify images
 
-[![NPM](https://nodei.co/npm/imagemin.png?downloads=true)](https://www.npmjs.com/package/imagemin)
+[![NPM](https://nodei.co/npm/imagemin.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/imagemin)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-imagemin/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-imagemin%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-imagemin/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-imagemin/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-imagemin/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-imagemin/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-imagemin/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-imagemin/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Kevin Mårtensson",
-        "email": "kevinmartensson@gmail.com",
         "url": "github.com/kevva"
     },
     "bugs": {
@@ -70,21 +74,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "kevva",
-            "email": "kevinmartensson@gmail.com"
+            "name": "kevva"
         },
         {
-            "name": "shinnn",
-            "email": "snnskwtnb@gmail.com"
+            "name": "shinnn"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         }
     ],
     "name": "imagemin",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/imagemin/imagemin.git"
@@ -94,53 +94,6 @@
     },
     "version": "5.2.2"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module imagemin](#apidoc.module.imagemin)
-1.  [function <span class="apidocSignatureSpan">imagemin.</span>buffer (input, opts)](#apidoc.element.imagemin.buffer)
-
-
-
-# <a name="apidoc.module.imagemin"></a>[module imagemin](#apidoc.module.imagemin)
-
-#### <a name="apidoc.element.imagemin.buffer"></a>[function <span class="apidocSignatureSpan">imagemin.</span>buffer (input, opts)](#apidoc.element.imagemin.buffer)
-- description and source-code
-```javascript
-(input, opts) => {
-	if (!Buffer.isBuffer(input)) {
-		return Promise.reject(new TypeError('Expected a buffer'));
-	}
-
-	opts = Object.assign({plugins: []}, opts);
-	opts.plugins = opts.use || opts.plugins;
-
-	const pipe = opts.plugins.length > 0 ? promisePipe(opts.plugins)(input) : Promise.resolve(input);
-
-	return pipe.then(buf => buf.length < input.length ? buf : input);
-}
-```
-- example usage
-```shell
-...
-
-##### plugins
-
-Type: 'array'
-
-Array of [plugins](https://www.npmjs.com/browse/keyword/imageminplugin) to use.
-
-### imagemin.buffer(buffer, [options])
-
-Returns a promise for a buffer.
-
-#### buffer
-
-Type: 'buffer'
-...
 ```
 
 
